@@ -278,11 +278,24 @@ footer h2 {
 /* Estilos para la página sobrenosotros.html **********************/
 .section1--sobreNosotros {
   text-align: center;
-  background-color: white;
+  /* background-color: white;*/
 }
 
 .section1 p {
   padding: 10px;
+}
+
+.section2--sobreNosotros {
+  display: flex;
+  /* text-align: center;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.engloba-iframe-y-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* section Estilos para la página tarifa*/
@@ -428,8 +441,8 @@ estos estilos se aplican para resoluciones menores a 586*/
     flex-direction: column;
   }
   .depto {
-    margin: 20px;
-    width: 100%;
+    /*margin: 10px;*/
+    width: 80%;
     position: relative;
     left: 0;
   }
