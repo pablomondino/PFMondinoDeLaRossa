@@ -90,8 +90,7 @@ body {
 /*******************  nav   **********************/
 /* grid area -------->>>nav   */
 nav {
-  display: flex;
-  flex-direction: columns;
+  /*@include flex(columns);*/
   grid-area: nav;
   background-color: black;
   height: 100%;
@@ -189,7 +188,7 @@ footer h2 {
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 30px;
+  /*left: 30px;*/
 }
 .footer-seguinos .nav-engloba-seguinos {
   display: flex;
@@ -253,15 +252,26 @@ footer h2 {
 }
 .depto__imagen {
   border: darkblue solid 2px;
+  width: 80%;
 }
 
 /* Estilos para la página index.html **********************/
+.section1--index {
+  width: 100%;
+}
 .section1--index h2 {
   margin-bottom: 10px;
 }
 .section1--index img {
-  margin-left: 20 rem;
+  /* margin-left: 20 rem;*/
   background-color: yellow;
+  object-fit: contain;
+}
+
+.section2--index {
+  width: 100%;
+}
+.section2--index img {
   object-fit: contain;
 }
 
@@ -308,7 +318,7 @@ table {
 .preguntas-frecuentes {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 100%;
   padding: 50px;
   background-color: #6d8ea0;
 }
@@ -320,11 +330,16 @@ table {
 .section2--contacto {
   flex-direction: column;
 }
-.section2--contacto #contacto {
+.section2--contacto #datos-de-contacto {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #6d8ea0;
+  /*background-color: $color_secundario;*/
   text-align: center;
+  position: relative;
+  top: 25px;
+}
+.section2--contacto #datos-de-contacto div {
+  margin: 25px;
 }
 
 form {
@@ -376,6 +391,9 @@ estos estilos se aplican para resoluciones menores a 1024*/
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  .engloba-comunicate-seguinos {
+    flex-direction: column;
   }
 }
 /*hasta aca 11*/
